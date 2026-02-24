@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ceej | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="site-identity">
+        <span class="site-name"><i>CeejOS</i></span>
+      </div>
+      <nav class="main-nav">
+        <a href="#" data-target="about"><img class="icon" src="images/about-icon.png" alt="About icon" style="padding-right: 0.25rem; width: 30px;">About</a>
+        <a href="#" data-target="hobbies"><img class="icon" src="images/hobbies-icon.png" alt="Hobbies icon" style="padding-right: 0.25rem; width: 30px;">Hobbies</a>
+        <a href="#" data-target="contact"><img class="icon" src="images/contact-icon.png" alt="Contact icon" style="padding-right: 0.25rem; width: 30px;">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="canvas">
+    <p id="canvasHint"></p>
+    <div class ="desktop">
+      <table>
+        <tr>
+          <td>
+            <a href="#" data-target="photograph">
+            <img class="icon" src="images/camera.png" alt="Favorite Photograph" class="desktop-icon-img" style="width: 100px; height: 100px;"></td>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td><center>photograph.jpg</center></td
+        </tr>
+        <tr>
+          <td>
+              <img class="icon" src="images/trash-can.png" alt="Recycle Bin" class="desktop-icon-img" style="width: 100px; height: 100px;">
+          </td>
+        </tr>
+          <td><center>Recycle Bin</center></td
+        </tr>
+      </table>
+    </div>
+
+    <div class="window" id="win-about" hidden>
+      <div class="win-bar">
+        <span>About Me</span>
+        <button class="win-close" data-close="about">✕</button>
+      </div>
+      <div class="win-body">
+        <section id="about">
+          <div class="avatar" aria-label="Profile photo"></div>
+          <div>
+            <h2>Hi, I'm Ceej!</h2>
+            <p>I'm a 2nd year student studying Computer Science at the UP Open University. I'm the youngest of two and a Capricorn born on Rizal day. I guess you can say I'm a fighter.</p>
+            <button id="funFactBtn" class="btn">🎲 Fun Fact</button>
+            <p id="funFactDisplay" aria-live="polite"></p>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+    <div class="window" id="win-photograph" hidden>
+      <div class="win-bar">
+        <span>photograph.jpg</span>
+        <button class="win-close" data-close="photograph">✕</button>
+      </div>
+      <div class="win-body">
+        <section id="photograph">
+          <div class="win-photograph-image"></div>
+        </section>
+      </div>
+    </div>
+
+    <div class="window" id="win-hobbies" hidden>
+      <div class="win-bar">
+        <span>Hobbies &amp; Interests</span>
+        <button class="win-close" data-close="hobbies">✕</button>
+      </div>
+      <div class="win-body">
+        <section id="hobbies">
+          <h2>What I Love Doing</h2>
+          <ul class="hobby-list">
+            <li>
+              <div>
+                <h3>Gaming</h3>
+                <p>I'm a sucker for multiplayer games and puzzle games. My favorite video games are Life is Strange, Undertale, and Balatro. I also enjoy a good Sudoko as well as the NY Times puzzles.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Reading</h3>
+                <p>I love essays on politics and society, as well as short stories. My last book is 'A tale for the Time Being' by Ruth Ozeki.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Music</h3>
+                <p>I play guitar and keyboard. I mostly listen to metal, screamo, indie pop, and (lately) OPM. I also collect cassettes and CDs. I've been learning about Strudel, a coding-based music composition tool.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Arts</h3>
+                <p>I enjoy illustrating. I've been exploring digital art tools and experimenting with acrylics and watercolors. I also love streeet photography.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Sports</h3>
+                <p>I love to run! My longest has been 10km. I also love Chess, though I suck at it.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <div class="window" id="win-contact" hidden>
+      <div class="win-bar">
+        <span>Contact</span>
+        <button class="win-close" data-close="contact">✕</button>
+      </div>
+      <div class="win-body">
+        <section id="contact">
+          <h2>Get in Touch</h2>
+          <ul class="contact-list">
+            <li><span>📧</span><a href="mailto:christianjorizmartinez@gmail.com">christianjorizmartinez@email.com</a></li>
+            <li><span>🐙</span><a href="https://github.com/zir0j">GitHub</a></li>
+            <li><span>💼</span><a href="https://linkedin.com/in/ceejmartinez">LinkedIn</a></li>
+            <li><span>📷</span><a href="https://instagram.com/paratingpagod">Instagram</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; <span id="year"></span> Christian Joriz Martinez</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
