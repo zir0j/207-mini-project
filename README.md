@@ -14,3 +14,4 @@ Contents
 
 *   Navbar that looks like a Taskbar.
 *   ‘About Me,’ ‘Hobbies,’ and ‘Contact’ sections
+*   A "working desktop" 
